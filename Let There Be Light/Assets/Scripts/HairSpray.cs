@@ -5,22 +5,29 @@ using UnityEngine;
 public class HairSpray : MonoBehaviour
 {
     public GameObject spray;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    private GameObject sprayCopy;
+ 
     // Update is called once per frame
     void Update()
     {
+        // if player is pressing down LMB
       if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(spray);
+            if (sprayCopy == null)
+            {
+                sprayCopy = Instantiate(spray);
+            }
         }
+
+      //if player lets go of LMB
       if (Input.GetMouseButtonUp(0)) 
         {
-            Destroy(spray);
+            Destroy(sprayCopy);
+            if (sprayCopy != null)
+            {
+                sprayCopy = null;
+                Destroy(sprayCopy);
+            }
         }
     }
 
