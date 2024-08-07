@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BugBehavior : MonoBehaviour
 {
- 
+    public ScoreManager scoreManager;
     // Update is called once per frame
     void Update()
     {
@@ -14,5 +14,6 @@ public class BugBehavior : MonoBehaviour
     private void OnMouseDown()
     {
         Destroy(gameObject);
+        scoreManager.ChangeScore(1);
     }
 }

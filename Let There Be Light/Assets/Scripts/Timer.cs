@@ -9,7 +9,8 @@ public class Timer : MonoBehaviour
 {
     public float timeLeft;
     public bool timerOn = false;
-
+    public GameObject gameOverMenu;
+    
     public TextMeshProUGUI timerText;
 
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class Timer : MonoBehaviour
                 Debug.Log("Time Up!");
                 timeLeft = 0;
                 timerOn = false;
+                gameOverMenu.SetActive(true);
             }
         }
     }
