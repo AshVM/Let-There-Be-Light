@@ -265,8 +265,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  horizontalDis: 55
-  verticalDis: 50
+  horizontalDis: 27
+  verticalDis: 37
 --- !u!1 &887564287
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +730,50 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1308426345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308426347}
+  - component: {fileID: 1308426346}
+  m_Layer: 0
+  m_Name: cursor controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1308426346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308426345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a227c43b471be346a43cfa9335f6416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1308426347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308426345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5168283, y: 0.7515963, z: -0.037385713}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1352752054
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,8 +941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.33
-  horizontalDis: 55
-  verticalDis: 50
+  horizontalDis: 15
+  verticalDis: 60
 --- !u!43 &1665732516
 Mesh:
   m_ObjectHideFlags: 0
@@ -1409,3 +1453,4 @@ SceneRoots:
   - {fileID: 1174421426}
   - {fileID: 1352752057}
   - {fileID: 299845639}
+  - {fileID: 1308426347}
