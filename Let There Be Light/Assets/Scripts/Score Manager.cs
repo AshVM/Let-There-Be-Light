@@ -11,11 +11,17 @@ public class ScoreManager : MonoBehaviour
     public TMP_Text finalScoreText;
     public TMP_Text highScoreText;
 
+    //public BugBehavior bugBehavior;
 
     public void ChangeScore(int points)
     {
         currentScore += points;
         scoreText.text = currentScore.ToString();
+       /* if (bugBehavior.bugClicked == true)
+        {
+            currentScore++;
+            Debug.Log("Score registers bug was clicked!");
+        } */
     }
 
     public void HighScoreUpdate()
